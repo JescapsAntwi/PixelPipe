@@ -1,0 +1,65 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# GCP
+*.json
+!*schema*.json
+gcp-key.json
+
+# Environment
+.env
+.env.local
+# Logs
+*.log
+logs/
+
+# Data
+*.csv
+!example_*.csv
+images/
+processed/
+
+# Docker
+.dockerignore

@@ -1,0 +1,49 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Image Processing Job",
+  "type": "object",
+  "required": ["job_id", "image_id", "url"],
+  "properties": {
+    "job_id": {
+      "type": "string",
+      "description": "Unique job identifier"
+    },
+    "image_id": {
+      "type": "string", 
+      "description": "Unique image identifier"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Source image URL"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "medium", "high"],
+      "default": "medium"
+    },
+    "category": {
+      "type": "string",
+      "description": "Image category"
+    },
+    "processing_options": {
+      "type": "object",
+      "properties": {
+        "create_thumbnail": {"type": "boolean", "default": true},
+        "extract_metadata": {"type": "boolean", "default": true},
+        "resize_formats": {
+          "type": "array",
+          "items": {"type": "string"},
+          "default": ["800x600", "400x300"]
+        },
+        "output_formats": {
+          "type": "array", 
+          "items": {"type": "string"},
+          "default": ["jpeg", "webp"]
+        }
+      }
+    }
+  }
+}
+
