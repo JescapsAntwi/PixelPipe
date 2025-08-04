@@ -11,7 +11,7 @@ resource "google_monitoring_dashboard" "pixelpipe_dashboard" {
             dataSets = [{
               timeSeriesQuery = {
                 timeSeriesFilter = {
-                  filter = "metric.type=\"cloudfunctions.googleapis.com/function/execution_count\" AND resource.type=\"cloud_function\""
+                  filter = "metric.type=cloudfunctions.googleapis.com/function/execution_count resource.type=cloud_function"
                 }
                 unitOverride = "1"
               }
@@ -24,7 +24,7 @@ resource "google_monitoring_dashboard" "pixelpipe_dashboard" {
             dataSets = [{
               timeSeriesQuery = {
                 timeSeriesFilter = {
-                  filter = "metric.type=\"run.googleapis.com/request_latencies\" AND resource.type=\"cloud_run_revision\""
+                  filter = "metric.type= un.googleapis.com/request_latencies resource.type=cloud_run_revision"
                 }
               }
             }]

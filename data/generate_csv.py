@@ -3,7 +3,7 @@
 CSV Generator for Image URLs Database
 Creates a structured CSV with 50 image URLs for processing
 """
-
+#create a scraper 
 import csv
 import requests
 import time
@@ -11,14 +11,13 @@ from datetime import datetime
 from typing import List, Dict
 import uuid
 
-# Sample image URLs from various sources (royalty-free)
+# Sample image URLs from various sources 
 SAMPLE_URLS = [
     "https://picsum.photos/800/600?random=1",
     "https://picsum.photos/1200/800?random=2", 
     "https://picsum.photos/400/300?random=3",
     "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
     "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800",
-    # Add more URLs as needed...
 ]
 
 def validate_url(url: str, timeout: int = 5) -> Dict:

@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Environment variables
-PROJECT_ID = os.environ.get('GCP_PROJECT', 'your-project-id')
+PROJECT_ID = os.environ.get('GCP_PROJECT', 'aya-internship')
 PUBSUB_TOPIC = os.environ.get('PUBSUB_TOPIC', 'pixelpipe-image-processing-dev')
 FIRESTORE_COLLECTION = 'pixelpipe_jobs'
 
