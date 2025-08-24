@@ -27,7 +27,7 @@ PixelPipe consists of the following core components:
 - **Cloud Functions:**
   - *CSV Ingestion Function*: Parses uploaded CSV files and publishes image processing jobs to Pub/Sub.
 
-- **Pub/Sub:**  
+- **Pub/Sub:**
   - *Image Processing Topic*: Decouples ingestion from processing, enabling scalable job distribution.
 
 - **Cloud Run Service:**  
