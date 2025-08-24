@@ -36,7 +36,7 @@ PixelPipe consists of the following core components:
 - **Firestore (optional):**
   - *Job Metadata*: Stores job status and metadata for tracking and querying.
 
-- **Monitoring & Logging:**  
+- **Monitoring & Logging:**
   - Integrated with Google Cloud Monitoring and Logging for real-time observability.
 
 See [docs/architecture.md](docs/architecture.md) for a detailed system diagram.
