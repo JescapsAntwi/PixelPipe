@@ -182,4 +182,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## 🙋‍♂️ Support
 
-For questions or support, please open an issue or contact the maintainers.
+For questions or support, please open an issue or contact me at <antwijescaps1@gmail.com>. Thank you for reading!.
