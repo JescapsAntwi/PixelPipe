@@ -33,7 +33,7 @@ PixelPipe consists of the following core components:
 - **Cloud Run Service:**
   - *Image Processor API*: Processes images (download, resize, convert, store) and exposes a `/process` endpoint for direct API jobs.
 
-- **Firestore (optional):**  
+- **Firestore (optional):**
   - *Job Metadata*: Stores job status and metadata for tracking and querying.
 
 - **Monitoring & Logging:**  
