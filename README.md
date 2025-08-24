@@ -24,7 +24,7 @@ PixelPipe consists of the following core components:
   - *CSV Source Bucket*: Triggers batch processing when a CSV is uploaded.
   - *Processed Images Bucket*: Stores all processed images.
 
-- **Cloud Functions:**  
+- **Cloud Functions:**
   - *CSV Ingestion Function*: Parses uploaded CSV files and publishes image processing jobs to Pub/Sub.
 
 - **Pub/Sub:**  
